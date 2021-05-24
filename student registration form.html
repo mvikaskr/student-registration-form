@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/html%20files/project%201.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration form</title>
+    <link rel="stylesheet" href="./student registration form_files/style.css">
+</head>
+<body>
+    <center>
+        <h2>Student registration</h2>
+    <form action="http://127.0.0.1:5500/html%20files/project%201.html#" name="student Registration" ;=""></form>
+    <table cellpadding="2" width="20" align="centre" cellspacing="2"> 
+        <tbody><tr>
+            <td>Name</td>
+            <td><input type="text" name="textname" id="textname" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>father Name</td>
+            <td><input type="text" name="fathername" id="fathername" size="30"></td>
+        </tr>
+        <tr>
+            <td>postal Address</td>
+            <td><input type="text" name="postaladdress" id="postaladdress" size="30"></td>
+        </tr>
+        <tr>
+            <td>Personal Address</td>
+            <td><input type="text" name="personaladdress" id="ersonaladdress" size="30"></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td><input type="radio" name="sex" id="male">male
+            <input type="radio" name="sex" id="Female">Female</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><select name="City">
+            <option value="-1" selected="">select</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Patna">Patna</option>
+            </select></td>
+        </tr>
+    
+    <tr>
+        <td>Course</td>
+        <td><select name="Course">
+        <option value="-1" selected="">select</option>
+        <option value="B tech">B tech</option>
+        <option value="Bcom">Bcom</option>
+        <option value="Bse">Bse</option>
+        </select></td>
+    </tr>
+
+<tr>
+    <td>District</td>
+    <td><select name="District">
+    <option value="-1" selected="">select</option>
+    <option value="madhubani">Madhubani</option>
+    <option value="supaul">Supaul</option>
+    <option value="Patna">Patna</option>
+    </select></td>
+</tr>
+
+<tr>
+    <td>City</td>
+    <td><select name="State">
+    <option value="-1" selected="">select</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Madhya Predesh">Madhya predesh</option>
+    <option value="Punjab">Punjab</option>
+    </select></td>
+</tr>
+<tr>
+    <td>PinCode</td>
+    <td><input type="text" name="PinCode" id="PinCode" size="30"></td>
+</tr>
+<tr>
+    <td>Email Id</td>
+    <td><input type="text" name="Email" id="Email" size="30"></td>
+</tr>
+<tr>
+    <td>DOB</td>
+    <td><input type="text" name="DOB" id="DOB" size="30"></td>
+</tr>
+<tr>
+    <td>MobileNo</td>
+    <td><input type="text" name="MobileNo" id="MobileNo" size="30"></td>
+</tr>
+
+<tr>
+    <td> <input type="reset"></td>
+    <td> <input type="submit" value="submit form"></td>
+    
+</tr>
+
+
+</tbody></table>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</center></body></html>
